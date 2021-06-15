@@ -4,10 +4,10 @@
 Environment:
     1. VPS with Public IP and DNS Record Configured (CNAME & A).
     2. Linux Ubuntu Server.
-    2. Docker.
+    3. Docker.
 ```
 
-# 1. with Nginx
+# with Nginx
 ```
 If you want to deploy your landing page with Nginx, goes to "Nginx-SSL" directory.
 $ cd Nginx-SSL
@@ -18,7 +18,7 @@ $ docker build -t yourimagename .
 $ docker run -d -p 80:80 -p 443:443 container-id bash
 ```
 
-# 2. with Apache
+# with Apache
 ```
 If you want to deploy your landing page with Apache, goes to "Apache-SSL" directory.
 $ cd Apache-SSL
@@ -29,7 +29,7 @@ $ docker build -t yourimagename .
 $ docker run -d -p 80:80 -p 443:443 container-id bash
 ```
 
-# 3. Generate SSL Certificate
+# Generate SSL Certificate
 ```
 to get an https connection, after you run your new image, please enter to the container and generate a new certificate with the help of certbot.
 $ docker ps (check your running container id)
@@ -42,7 +42,7 @@ for apache:
 $ certbot --apache
 ```
 
-# 4. Access on
+# Access on
 ```
 https://localhost or https://your.domain
 ```
