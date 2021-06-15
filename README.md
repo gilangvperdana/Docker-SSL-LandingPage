@@ -15,7 +15,7 @@ $ cd Nginx-SSL
 don't forget to change the HTML file to be deployed, the contents of the HTML file to be deployed in the "HTML" folder.
 after the HTML to be deployed is filled in, please create an image and run the image.
 $ docker build -t yourimagename .
-$ docker run -d -p 80:80 -p 443:443 container-id bash
+$ docker run -d -p 80:80 -p 443:443 your_image_name
 ```
 
 # with Apache
@@ -26,7 +26,7 @@ $ cd Apache-SSL
 Don't forget to change the HTML file to be deployed, the contents of the HTML file to be deployed in the "HTML" folder.
 After the HTML to be deployed is filled in, please create an image and run the image.
 $ docker build -t yourimagename .
-$ docker run -d -p 80:80 -p 443:443 container-id bash
+$ docker run -d -p 80:80 -p 443:443 your_image_name
 ```
 
 # Generate SSL Certificate
